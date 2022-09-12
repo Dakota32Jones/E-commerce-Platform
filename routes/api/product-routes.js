@@ -37,7 +37,6 @@ router.get("/:id", (req, res) => {
     where: {
       id: req.params.id,
     },
-    attributes: ["id", "product_name", "price", "stock", "category_id"],
     include: [
       {
         model: Category,
@@ -45,7 +44,8 @@ router.get("/:id", (req, res) => {
       },
       {
         model: Tag,
-        attributes: ["id, tag_name"],
+        through: ProductTag,
+        as: "tags",
       },
     ],
   })
@@ -152,8 +152,10 @@ router.delete("/:id", (req, res) => {
       }
       res.json(dbProductData);
     })
-    .catch((err) => console.log(err));
-  res.status(500).json(err);
+    .catch((err) => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 module.exports = router;
