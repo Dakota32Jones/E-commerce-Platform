@@ -25,13 +25,15 @@ npm run seed
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Links to Walkthrough Videos below!
+[Initiating Program](https://drive.google.com/file/d/192Mf8ai1f3ge8JtWzE9uq7jHIlIzM21N/view?usp=sharing)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+[Tag and Category PUT, POST, DELETE, Methods](https://drive.google.com/file/d/1GNtaLt5S5fvXVlK3gxbHWHYatyEJkqEk/view?usp=sharing)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+[Products PUT, POST, DELETE, Methods](https://drive.google.com/file/d/1zoERyhMqQjOlpuhfNo-_iFj_3dcBtMv2/view?usp=sharing)
+
+![Application Running in Terminal](./assets/images/Program%20Running%20in%20the%20terminal.png)
+![Application Running in Insomnia](./assets/images/Application%20Working%20in%20Insomnia.png)
 
 ## Credits
 
